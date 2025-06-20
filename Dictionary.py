@@ -22,3 +22,18 @@ print(f"----Added New Student: {new_student_name} with score {new_student_score}
 for name, score in student_scores.items():
     print(f"{name}: {score}")
 print("\n")
+
+#Update the score for an existing student.
+
+# Find the student with the highet score and print their name and score
+if student_scores: # Ensure the dictionalry is not empty
+    highest_score = 0
+    highest_scorer_name = ""
+    for name, score in student_scores.items():
+        if score > highest_score:
+            highest_score = score
+            highest_scorer_name = name
+    print(f"---Studnet with the Highest Score ---")
+    print(f"{highest_scorer_name} : {highest_score}\n")
+else:
+    print("The dictionary is empty, cannot find the highet score.\n")
