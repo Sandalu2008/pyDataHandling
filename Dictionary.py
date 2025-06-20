@@ -37,3 +37,7 @@ if student_scores: # Ensure the dictionalry is not empty
     print(f"{highest_scorer_name} : {highest_score}\n")
 else:
     print("The dictionary is empty, cannot find the highet score.\n")
+
+
+# Create a new dictionary containd only students who scored 90 or more
+high_achievers = {}
